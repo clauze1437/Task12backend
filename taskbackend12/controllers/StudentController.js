@@ -1,4 +1,4 @@
-// import Model Student
+// mengimport model student
 const Student = require("../models/Student");
 
 class StudentController {
@@ -8,7 +8,7 @@ class StudentController {
     const students = await Student.all();
 
     const data = {
-      message: "Menampilkkan semua students",
+      message: "menampilkan data students",
       data: students,
     };
 
@@ -22,11 +22,11 @@ class StudentController {
      * Mengembalikan response dalam bentuk json.
      */
 
-    // Tambahkan data students
+    // menambahkan data students
     const students = await Student.create(req.body);
 
     const data = {
-      message: "Menambahkan data student",
+      message: "Tambahkan data student",
       data: students,
     };
 
